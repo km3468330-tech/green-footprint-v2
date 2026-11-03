@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#087f45">
+  <title>Green Footprint</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="top">
+    <div class="logo">🌿 Green Footprint</div>
+    <button class="lang" id="langBtn">English</button>
+  </div>
+
+  <p id="greeting">مرحباً بك في عالم أكثر خضرة</p>
+  <h1 id="welcome">اصنع فرقاً يبدأ منك!</h1>
+  <p id="subtitle">كل خطوة صغيرة تصنع مستقبلاً أفضل لكوكبنا.</p>
+</header>
+
+<main class="container">
+
+  <section class="card">
+    <p id="pointsLabel">نقاطك البيئية</p>
+    <div class="score">🌱 250</div>
+    <div class="stats">
+      <div><strong>12</strong><small id="recycle">عملية تدوير</small></div>
+      <div><strong>8.5</strong><small>Kg CO₂*</small></div>
+      <div><strong>4</strong><small id="challenges">تحديات</small></div>
+    </div>
+  </section>
+
+  <h2 id="actionsTitle">ماذا تريد أن تفعل؟</h2>
+
+  <section class="grid">
+    <button class="action" data-page="recycle">
+      <span>♻️</span>
+      <b id="a1">إعادة التدوير</b>
+      <small id="d1">تعلم طرق الفرز</small>
+    </button>
+
+    <button class="action" data-page="report">
+      <span>📸</span>
+      <b id="a2">الإبلاغ عن المخلفات</b>
+      <small id="d2">ساعد في تنظيف منطقتك</small>
+    </button>
+
+    <button class="action" data-page="map">
+      <span>📍</span>
+      <b id="a3">أماكن التدوير</b>
+      <small id="d3">اكتشف نقاط التجميع</small>
+    </button>
+
+    <button class="action" data-page="rewards">
+      <span>🏆</span>
+      <b id="a4">المكافآت</b>
+      <small id="d4">اجمع النقاط</small>
+    </button>
+  </section>
+
+  <h2 id="activityTitle">نشاطك الأخير</h2>
+  <section class="card">
+    🌳 <b id="activity">مرحباً بك في بصمة خضراء</b>
+  </section>
+
+  <p class="note" id="note">
+    * الأرقام المعروضة تجريبية وليست قياسات فعلية.
+  </p>
+
+  <section id="result" class="card result" hidden></section>
+
+</main>
+
+<footer>
+  <button id="homeBtn">🏠<br>الرئيسية</button>
+  <button data-page="recycle">♻️<br>التدوير</button>
+  <button data-page="rewards">🏆<br>المكافآت</button>
+</footer>
+
+<script src="app.js"></script>
+</body>
+  </html>
